@@ -40,7 +40,13 @@ input {
     margin: auto;
 }
 
-.shape {
+
+.shape-container {
+    width: 100%;
+    width: 100%;
+}
+
+.shape-container .shape {
     height: 120vh;
     width: 120vh;
     background-color: var(--shape);
@@ -224,9 +230,14 @@ input {
         margin: auto;
     }
 
-    .shape {
-        height: 100%;
+    .shape-container {
         width: 100%;
+        overflow-x: hidden;
+    }
+
+    .shape-container .shape {
+        height: 120vh;
+        width: 120vh;
     }
 
     .sign {
