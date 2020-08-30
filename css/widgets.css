@@ -192,8 +192,9 @@ nav .nav-items .changable-placeholder a {
 
 @media(max-width:1000px) {
     nav {
-        padding-top: 12px;
+        padding-top: 25px;
         padding-bottom: 20px;
+        background-color: var(--white);
     }
 
     nav .nav-items,
