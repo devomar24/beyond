@@ -166,8 +166,8 @@ nav .nav-items .nav-links ul li {
 }
 
 nav .nav-items .nav-links ul li a {
-    font-weight: 600;
-    font-size: 0.90rem;
+    font-weight: 500;
+    font-size: 1.2rem;
     text-transform: capitalize;
     color: var(--navlink);
     transition: .2s ease-in-out;
@@ -178,7 +178,7 @@ nav .nav-items .nav-links ul li a:hover {
     color: var(--accent);
 }
 
-nav .nav-items .changable-placeholder button {
+nav .nav-items .changable-placeholder a {
     background-color: var(--pink);
     border: none;
     padding: 10px 20px;
@@ -187,6 +187,7 @@ nav .nav-items .changable-placeholder button {
     text-transform: capitalize;
     border-radius: 10px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 @media(max-width:1000px) {
@@ -252,6 +253,10 @@ nav .nav-items .changable-placeholder button {
         margin: auto;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    nav .nav-items .changable-placeholder a {
+        padding: 20px 40px;
     }
 
 }

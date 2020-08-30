@@ -224,20 +224,19 @@ input {
 
 /* responsive layout */
 @media(max-width:1000px) {
+
+    body,
+    html {
+        background-color: var(--shape)
+    }
+
     .custom-container {
         width: 90%;
         margin: auto;
     }
 
-    .shape-container {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
     .shape-container .shape {
-        height: 120vh;
-        width: 120vh;
+        display: none;
     }
 
     .sign {
@@ -253,7 +252,7 @@ input {
 
     .sign .image {
         height: 60vh;
-        margin: 20px auto;
+        margin: auto;
     }
 
     .sign .form .title h2 {
