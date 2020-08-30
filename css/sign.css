@@ -231,12 +231,13 @@ input {
 
     .shape-container {
         width: 100%;
-        overflow-x: hidden;
+        height: 100%;
+        position: relative;
     }
 
     .shape-container .shape {
-        display: none;
-
+        height: 120vh;
+        width: 120vh;
     }
 
     .sign {
