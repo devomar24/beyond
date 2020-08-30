@@ -253,6 +253,7 @@ input {
     .sign .image {
         height: 60vh;
         margin: auto;
+        margin-top: -20px;
     }
 
     .sign .form .title h2 {
