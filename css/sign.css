@@ -1,0 +1,265 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap");
+
+/*  variables and defaul css */
+:root {
+    --primary: #405CF5;
+    --accent: #F4A816;
+    --hover: #0707be;
+    --navlink: rgb(41, 41, 41);
+    --nav: #fff;
+    --black: #020931;
+    --pink: rgb(255, 97, 189);
+    --shape: #4D47FF;
+    --white: #fff;
+    --grey: grey;
+    --tranision: .3s ease-in-out;
+}
+
+body,
+html {
+    font-family: "Poppins";
+    overflow-x: hidden;
+    height: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button,
+input {
+    outline: none !important;
+}
+
+.custom-container {
+    width: 85%;
+    margin: auto;
+}
+
+.shape {
+    height: 120vh;
+    width: 120vh;
+    background-color: var(--shape);
+    border-radius: 50%;
+    position: absolute;
+    right: -20%;
+    top: -5%;
+    bottom: -5%;
+    z-index: 0;
+}
+
+/* sign */
+.sign {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.sign .image {
+    height: 100%;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.sign .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.sign .form {
+    width: 95%;
+    background-color: whitesmoke;
+    padding: 30px 50px;
+    border-radius: 40px;
+    margin-top: 4em;
+    position: relative;
+    z-index: 1;
+}
+
+.sign .muted {
+    height: 100px;
+    width: 100px;
+    background-color: #e0e4ff;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(10px);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.sign .muted.muted02 {
+    right: 20px;
+    top: 20%;
+    height: 150px;
+    width: 150px;
+    background-color: #fffec5;
+}
+
+.sign .muted.muted03 {
+    left: 20px;
+    bottom: 20%;
+    height: 150px;
+    width: 150px;
+    background-color: #ffcbf8;
+}
+
+.sign .parent {
+    position: relative;
+    z-index: 1;
+}
+
+.sign .form .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sign .form .title h2 {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 3em;
+}
+
+.sign .form .title .google-sign span {
+    color: var(--grey);
+    text-transform: capitalize;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 0.85rem;
+}
+
+.sign .form .title .google-sign button {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--white);
+    border: none;
+}
+
+.sign .form .title .google-sign button img {
+    height: 70%;
+    width: 70%;
+}
+
+.sign .form .input {
+    margin-bottom: 30px;
+}
+
+.sign .form .input label {
+    color: var(--grey);
+    font-size: 0.88rem;
+    display: block;
+    font-weight: 500;
+    padding-left: 8px;
+}
+
+.sign .form .input input {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    border: 2px solid transparent;
+    transition: var(--tranision);
+    font-size: 0.99rem;
+    font-weight: 500;
+}
+
+.sign .form .input input:focus {
+    border-color: var(--primary);
+}
+
+.sign .form .input .d-flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign .form .input .d-flex a {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.sign .form .submit button {
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 0.88rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    padding: 20px 40px;
+    transition: var(--tranision);
+}
+
+.sign .form .submit button:hover {
+    background-color: var(--hover);
+}
+
+.sign .form .text-center {
+    margin-top: 2em;
+}
+
+.sign .form .text-center a {
+    font-size: 0.80em;
+    color: var(--grey);
+    font-weight: 500;
+}
+
+.sign .form .text-center a span {
+    color: var(--black);
+    font-weight: 600;
+}
+
+
+/* responsive layout */
+@media(max-width:1000px) {
+    .custom-container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .shape {
+        height: 150vh
+    }
+
+    .sign {
+        height: auto;
+        width: 100%;
+    }
+
+    .sign .form {
+        width: 100%;
+        margin: 2em auto auto auto;
+        padding: 30px;
+    }
+
+    .sign .image {
+        height: 70vh;
+        margin: 20px auto;
+    }
+
+    .sign .form .title h2 {
+        font-size: 1.2em;
+    }
+
+    .sign .form .title .google-sign span {
+        font-size: 0.80rem;
+    }
+
+    .sign .form .title .google-sign button {
+        padding: 10px;
+    }
+
+    .sign .form .input label {
+        font-size: 0.85rem;
+    }
+
+    .sign .form .input input {
+        padding: 15px;
+    }
+}
