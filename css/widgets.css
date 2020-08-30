@@ -167,15 +167,16 @@ nav .nav-items .nav-links ul li {
 
 nav .nav-items .nav-links ul li a {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: capitalize;
     color: var(--navlink);
     transition: .2s ease-in-out;
     cursor: pointer;
+    text-decoration: none
 }
 
 nav .nav-items .nav-links ul li a:hover {
-    color: var(--accent);
+    color: var(--pink);
 }
 
 nav .nav-items .changable-placeholder a {
@@ -223,9 +224,9 @@ nav .nav-items .changable-placeholder a {
     }
 
     nav .nav-items .nav-links ul li a {
-        font-size: 1em;
+        font-size: 1.2em;
         color: white;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     nav .nav-items .nav-links.open {
