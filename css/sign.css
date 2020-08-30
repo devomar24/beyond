@@ -19,7 +19,7 @@
 body,
 html {
     font-family: "Poppins";
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     height: auto;
 }
 
@@ -56,6 +56,7 @@ input {
 .sign {
     height: 100vh;
     width: 100%;
+    overflow-x: hidden !important;
     position: relative;
 }
 
@@ -219,12 +220,12 @@ input {
 /* responsive layout */
 @media(max-width:1000px) {
     .custom-container {
-        width: 95%;
+        width: 90%;
         margin: auto;
     }
 
     .shape {
-        height: 150vh
+        height: 130vh
     }
 
     .sign {
@@ -234,12 +235,12 @@ input {
 
     .sign .form {
         width: 100%;
-        margin: 2em auto auto auto;
+        margin: 2em auto 0 auto;
         padding: 30px;
     }
 
     .sign .image {
-        height: 70vh;
+        height: 60vh;
         margin: 20px auto;
     }
 
