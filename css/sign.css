@@ -62,7 +62,6 @@ input {
 .sign {
     height: 100vh;
     width: 100%;
-    overflow-x: hidden !important;
     position: relative;
 }
 
@@ -236,8 +235,8 @@ input {
     }
 
     .shape-container .shape {
-        height: 120vh;
-        width: 120vh;
+        display: none;
+
     }
 
     .sign {
