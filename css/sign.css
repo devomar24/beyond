@@ -20,7 +20,8 @@ body,
 html {
     font-family: "Poppins";
     overflow-x: hidden !important;
-    height: auto;
+    background-color: var(--shape);
+    height: 100%;
 }
 
 * {
@@ -40,29 +41,21 @@ input {
     margin: auto;
 }
 
-
-.shape-container {
-    width: 100%;
-    width: 100%;
+nav .nav-items .nav-links ul li a,
+nav .nav-items .nav-logo h4 {
+    color: var(--white);
 }
 
-.shape-container .shape {
-    height: 120vh;
-    width: 120vh;
-    background-color: var(--shape);
-    border-radius: 50%;
-    position: absolute;
-    right: -20%;
-    top: -5%;
-    bottom: -5%;
-    z-index: 0;
-}
 
 /* sign */
 .sign {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: relative;
+}
+
+.sign.signup {
+    height: 100%;
 }
 
 .sign .image {
@@ -224,19 +217,13 @@ input {
 
 /* responsive layout */
 @media(max-width:1000px) {
-
-    body,
-    html {
-        background-color: var(--shape)
+    nav .nav-items .nav-logo h4 {
+        color: var(--navlink);
     }
 
     .custom-container {
         width: 90%;
         margin: auto;
-    }
-
-    .shape-container .shape {
-        display: none;
     }
 
     .sign {
